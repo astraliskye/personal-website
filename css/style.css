@@ -1,19 +1,42 @@
 * {
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 
-#hero {
-  height: 40vh;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Serif", serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  max-width: 100%;
+}
+
+#greetings {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to bottom right, red, orange, yellow);
-  font-size: 5em;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 1em;
+}
+
+#greetings h1 {
+  text-align: center;
+  font-size: 3em;
+  padding: 1em 0;
+}
+
+#greetings p {
+  text-align: center;
 }
 
 #project-list {
@@ -21,7 +44,7 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 1em;
 }
 
 #project-list h3 {
@@ -31,11 +54,9 @@
 #project-list>div {
   width: 15em;
   flex-shrink: 0;
-  background-color: #422;
-  min-height: 200px;
+  min-height: 300px;
   border-radius: 1em;
   box-shadow: 2px 2px 5px 0px #999;
-  color: white;
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -44,10 +65,6 @@
 
 #project-list>div hr {
   margin: 1em;
-}
-
-#project-list>div a {
-  color: white;
 }
 
 #project-list>div>div:nth-child(2) {
@@ -62,9 +79,16 @@
   text-align: center;
 }
 
-main {
+body {
+  background-image: linear-gradient(to bottom right, red, orange, yellow);
+}
+
+body>div {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1200px;
+  background-color: white;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 header {
@@ -73,13 +97,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em 2em;
+  padding: 5em 2em;
+  background-color: white;
 }
 
 section {
