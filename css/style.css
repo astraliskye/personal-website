@@ -33,7 +33,7 @@ header {
 #greetings h1 {
   text-align: center;
   font-size: 3em;
-  padding: 1em 0;
+  padding-bottom: 1em;
 }
 
 #greetings p {
@@ -79,7 +79,8 @@ header {
 }
 
 body {
-  background-image: linear-gradient(to bottom right, red, orange, yellow);
+  background-image: linear-gradient(to bottom right, red, orange, yellow), url(https://grainy-gradients.vercel.app/noise.svg);
+  background-blend-mode: hard-light;
 }
 
 body>div {
