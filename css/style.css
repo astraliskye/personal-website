@@ -13,6 +13,7 @@ h4,
 h5,
 h6 {
   font-family: "IBM Plex Serif", serif;
+  font-size: 1.3em;
 }
 
 header {
@@ -44,7 +45,7 @@ header {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 3em 1em;
 }
 
 #project-list h3 {
@@ -52,15 +53,13 @@ header {
 }
 
 #project-list>div {
-  width: 15em;
-  flex-shrink: 0;
+  width: 17em;
   min-height: 300px;
-  border-radius: 1em;
-  box-shadow: 2px 2px 5px 0px #999;
   padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 3px 6px 0px 0px #000;
 }
 
 #project-list>div hr {
