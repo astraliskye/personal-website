@@ -80,7 +80,7 @@ header {
 
 body {
   background-image: linear-gradient(to bottom right, red, orange, yellow), url(https://grainy-gradients.vercel.app/noise.svg);
-  background-blend-mode: hard-light;
+  background-blend-mode: overlay;
 }
 
 body>div {
